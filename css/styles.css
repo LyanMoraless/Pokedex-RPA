@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+.btns{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+.btn{
+  padding: 15px;
+  border-radius: 200px;
+  border-color: red;
+  background-color: transparent;
+  color: red;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Document</title>
+
+  <script>
+    function showPage(page) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach((page) => {
+            page.classList.remove('active');
+        });
+        const currentPage = document.querySelector(`#page${page}`);
+        currentPage.classList.add('active');
+    }
+</script>
+
+</head>
+<body>    
+    <div id="page1" class="page active">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Poder</th>
+                <th>Vida</th>
+                <th>Ataque</th>
+                <th>Forte Contra</th>
+                <th>Fraco Contra</th>
+            </tr>
+            <tr>
+              <td>Pikachu</td>
+              <td>Electric</td>
+              <td>35</td>
+              <td>55</td>
+              <td>Water, Flying</td>
+              <td>Ground</td>
+          </tr>
+          <tr>
+              <td>Bulbasaur</td>
+              <td>Grass, Poison</td>
+              <td>45</td>
+              <td>49</td>
+              <td>Water, Electric, Grass, Fighting, Fairy</td>
+              <td>Fire, Ice, Flying, Psychic</td>
+          </tr>
+          <tr>
+              <td>Charmander</td>
+              <td>Fire</td>
+              <td>39</td>
+              <td>52</td>
+              <td>Grass, Bug, Ice, Steel</td>
+              <td>Water, Rock, Dragon</td>
+          </tr>
+          <tr>
+              <td>Squirtle</td>
+              <td>Water</td>
+              <td>44</td>
+              <td>48</td>
+              <td>Fire, Ground, Rock</td>
+              <td>Grass, Electric</td>
+          </tr>
+          <tr>
+              <td>Jigglypuff</td>
+              <td>Normal, Fairy</td>
+              <td>115</td>
+              <td>45</td>
+              <td>Fighting, Dragon, Dark</td>
+              <td>Poison, Steel</td>
+          </tr>
+          <tr>
+              <td>Pidgey</td>
+              <td>Normal, Flying</td>
+              <td>40</td>
+              <td>45</td>
+              <td>Grass, Bug, Fighting</td>
+              <td>Electric, Ice, Rock</td>
+          </tr>
+          <tr>
+              <td>Geodude</td>
+              <td>Rock, Ground</td>
+              <td>40</td>
+              <td>80</td>
+              <td>Fire, Electric, Poison, Normal, Flying, Rock</td>
+              <td>Water, Grass, Ice, Fighting, Ground, Steel</td>
+          </tr>
+          <tr>
+              <td>Psyduck</td>
+              <td>Water</td>
+              <td>50</td>
+              <td>52</td>
+              <td>Fire, Ground, Rock</td>
+              <td>Grass, Electric</td>
+          </tr>
+          <tr>
+              <td>Abra</td>
+              <td>Psychic</td>
+              <td>25</td>
+              <td>20</td>
+              <td>Fighting, Poison</td>
+              <td>Bug, Ghost, Dark</td>
+          </tr>
+          <tr>
+              <td>Machop</td>
+              <td>Fighting</td>
+              <td>70</td>
+              <td>80</td>
+              <td>Normal, Rock, Steel, Ice, Dark</td>
+              <td>Flying, Psychic, Fairy</td>
+          </tr>
+        </table>
+    </div>
+    
+    <div id="page2" class="page">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Poder</th>
+                <th>Vida</th>
+                <th>Ataque</th>
+                <th>Forte Contra</th>
+                <th>Fraco Contra</th>
+            </tr>
+            <tr>
+              <td>Bellsprout</td>
+              <td>Grass, Poison</td>
+              <td>50</td>
+              <td>75</td>
+              <td>Water, Electric, Grass, Fighting, Fairy</td>
+              <td>Fire, Ice, Flying, Psychic</td>
+          </tr>
+          <tr>
+              <td>Tentacool</td>
+              <td>Water, Poison</td>
+              <td>40</td>
+              <td>40</td>
+              <td>Electric, Grass, Fighting, Poison, Bug, Fairy</td>
+              <td>Ground, Psychic</td>
+          </tr>
+          <tr>
+              <td>Charizard</td>
+              <td>Fire, Flying</td>
+              <td>78</td>
+              <td>84</td>
+              <td>Grass, Bug, Fighting, Steel</td>
+              <td>Water, Rock, Electric</td>
+          </tr>
+          <tr>
+              <td>Blastoise</td>
+              <td>Water</td>
+              <td>79</td>
+              <td>83</td>
+              <td>Fire, Ground, Rock</td>
+              <td>Grass, Electric</td>
+          </tr>
+          <tr>
+              <td>Butterfree</td>
+              <td>Bug, Flying</td>
+              <td>60</td>
+              <td>45</td>
+              <td>Grass, Fighting, Bug</td>
+              <td>Fire, Electric, Ice, Flying, Rock</td>
+          </tr>
+          <tr>
+              <td>Beedrill</td>
+              <td>Bug, Poison</td>
+              <td>65</td>
+              <td>90</td>
+              <td>Grass, Fighting, Bug, Fairy</td>
+              <td>Fire, Flying, Psychic, Rock</td>
+          </tr>
+          <tr>
+              <td>Pidgeotto</td>
+              <td>Normal, Flying</td>
+              <td>63</td>
+              <td>60</td>
+              <td>Grass, Bug, Fighting</td>
+              <td>Electric, Ice, Rock</td>
+          </tr>
+          <tr>
+              <td>Pidgeot</td>
+              <td>Normal, Flying</td>
+              <td>83</td>
+              <td>80</td>
+              <td>Grass, Bug, Fighting</td>
+              <td>Electric, Ice, Rock</td>
+          </tr>
+          <tr>
+              <td>Rattata</td>
+              <td>Normal</td>
+              <td>30</td>
+              <td>56</td>
+              <td>Ghost</td>
+              <td>Fighting</td>
+          </tr>
+          <tr>
+              <td>Raticate</td>
+              <td>Normal</td>
+              <td>55</td>
+              <td>81</td>
+              <td>Ghost</td>
+              <td>Fighting</td>
+          </tr>
+        </table>
+    </div>
+    
+    <div id="page3" class="page">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Poder</th>
+                <th>Vida</th>
+                <th>Ataque</th>
+                <th>Forte Contra</th>
+                <th>Fraco Contra</th>
+            </tr>
+            <tr>
+              <td>Nidoran♀</td>
+              <td>Poison</td>
+              <td>55</td>
+              <td>47</td>
+              <td>Grass, Bug, Fighting, Fairy</td>
+              <td>Ground, Psychic</td>
+          </tr>
+          <tr>
+              <td>Nidorina</td>
+              <td>Poison</td>
+              <td>70</td>
+              <td>62</td>
+              <td>Grass, Bug, Fighting, Fairy</td>
+              <td>Ground, Psychic</td>
+          </tr>
+          <tr>
+              <td>Nidoqueen</td>
+              <td>Poison, Ground</td>
+              <td>90</td>
+              <td>92</td>
+              <td>Grass, Bug, Electric, Poison, Rock</td>
+              <td>Water, Ice, Psychic, Ground</td>
+          </tr>
+          <tr>
+              <td>Nidoran♂</td>
+              <td>Poison</td>
+              <td>46</td>
+              <td>57</td>
+              <td>Grass, Bug, Fighting, Fairy</td>
+              <td>Ground, Psychic</td>
+          </tr>
+          <tr>
+              <td>Nidorino</td>
+              <td>Poison</td>
+              <td>61</td>
+              <td>72</td>
+              <td>Grass, Bug, Fighting, Fairy</td>
+              <td>Ground, Psychic</td>
+          </tr>
+          <tr>
+              <td>Nidoking</td>
+              <td>Poison, Ground</td>
+              <td>81</td>
+              <td>102</td>
+              <td>Grass, Bug, Electric, Poison, Rock</td>
+              <td>Water, Ice, Psychic, Ground</td>
+          </tr>
+          <tr>
+              <td>Oddish</td>
+              <td>Grass, Poison</td>
+              <td>45</td>
+              <td>50</td>
+              <td>Water, Electric, Grass, Fighting, Fairy</td>
+              <td>Fire, Ice, Flying, Psychic</td>
+          </tr>
+          <tr>
+              <td>Gloom</td>
+              <td>Grass, Poison</td>
+              <td>60</td>
+              <td>65</td>
+              <td>Water, Electric, Grass, Fighting, Fairy</td>
+              <td>Fire, Ice, Flying, Psychic</td>
+          </tr>
+          <tr>
+              <td>Vileplume</td>
+              <td>Grass, Poison</td>
+              <td>75</td>
+              <td>80</td>
+              <td>Water, Electric, Grass, Fighting, Fairy</td>
+              <td>Fire, Ice, Flying, Psychic</td>
+          </tr>
+          <tr>
+              <td>Paras</td>
+              <td>Bug, Grass</td>
+              <td>35</td>
+              <td>70</td>
+              <td>Water, Electric, Grass, Fighting, Fairy, Bug</td>
+              <td>Fire, Ice, Flying, Poison, Bug, Rock</td>
+          </tr>
+          <tr>
+              <td>Parasect</td>
+              <td>Bug, Grass</td>
+              <td>60</td>
+              <td>95</td>
+              <td>Water, Electric, Grass, Fighting, Fairy, Bug</td>
+              <td>Fire, Ice, Flying, Poison, Bug, Rock</td>
+          </tr>
+          <tr>
+              <td>Venonat</td>
+              <td>Bug, Poison</td>
+              <td>60</td>
+              <td>55</td>
+              <td>Grass, Fighting, Bug, Fairy, Poison</td>
+              <td>Fire, Flying, Psychic, Rock</td>
+          </tr>
+          <tr>
+              <td>Venomoth</td>
+              <td>Bug, Poison</td>
+              <td>70</td>
+              <td>65</td>
+              <td>Grass, Fighting, Bug, Fairy, Poison</td>
+              <td>Fire, Flying, Psychic, Rock</td>
+          </tr>
+        </table>
+    </div>
+    
+    <div class="btns">
+      <button class="btn" onclick="showPage(1)">Page 1</button>
+      <button class="btn" onclick="showPage(2)">Page 2</button>
+      <button class="btn" onclick="showPage(3)">Page 3</button>
+    </div>
+
+    <script>
+        showPage(1);
+    </script>
+</body>
+</html>
